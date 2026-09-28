@@ -24,7 +24,7 @@ I – DA MOTIVAÇÃO DA INTERVENÇÃO
 
 2. A presença policial no local não decorreu de planejamento, ordem de serviço ou determinação voltada a evento político-eleitoral. A guarnição foi acionada pela Central de Operações (ROP nº 2026091800328-CICOM-BAR), por volta das 20h09, para prestar apoio à Superintendência Municipal de Trânsito – SUTRANS, que atendia a uma situação de diversas motocicletas "cortando giro" nas imediações do Posto AVANX, Rua Ibitiba, Bairro Santa Cruz, zona urbana deste Município.
 
-3. Registra-se que não há, no âmbito deste Batalhão, comunicação prévia de ato de campanha dos impetrantes em Luís Eduardo Magalhães na data de 18/09/2026 [CONFIRMAR NO PROTOCOLO/SEI DA UNIDADE]. As comunicações juntadas ao processo (Ofício nº 26/2026 – Itapicuru e Riacho de Santana; Ofício nº 47/2026 – Juazeiro, Ipiaú e Vitória da Conquista) não contemplam este Município, e a própria agenda de eventos apresentada na petição inicial (item 6) inicia-se em 19/09/2026. Assim, os policiais militares empregados não tinham conhecimento de que se tratava de suposto ato de campanha eleitoral.
+3. Registra-se que este Batalhão não recebeu qualquer ofício ou comunicação prévia dos impetrantes acerca da realização de ato de campanha em Luís Eduardo Magalhães na data de 18/09/2026. As comunicações juntadas ao processo (Ofício nº 26/2026 – Itapicuru e Riacho de Santana; Ofício nº 47/2026 – Juazeiro, Ipiaú e Vitória da Conquista) não contemplam este Município, e a própria agenda de eventos apresentada na petição inicial (item 6) inicia-se em 19/09/2026. Assim, os policiais militares empregados não tinham conhecimento de que se tratava de suposto ato de campanha eleitoral.
 
 II – DA DINÂMICA DOS FATOS
 
@@ -38,11 +38,11 @@ II – DA DINÂMICA DOS FATOS
 
 III – DAS EQUIPES E VIATURAS DA PMBA EMPREGADAS
 
-8. Pelo 27º BPM, atuaram na ocorrência o SD PM Augusto Cruz de Souza, Mat. 92110917, e o SD PM Ailton de Almeida Feitosa, Mat. 92163942, a bordo da viatura [PREFIXO], além de [DESCREVER AS DEMAIS GUARNIÇÕES DA PMBA PRESENTES, COM PREFIXOS, OU INFORMAR QUE NÃO HOUVE].
+8. Pelo 27º BPM, foram empregadas 03 (três) viaturas: a VTR 8.2704, guarnecida pelo SD PM Augusto Cruz de Souza, Mat. 92110917, e pelo SD PM Ailton de Almeida Feitosa, Mat. 92163942, responsável pelo registro da ocorrência; e as VTR 8.2709 e 8.2708, que prestaram apoio à ação.
 
 IV – DA PARTICIPAÇÃO DE OUTROS ÓRGÃOS
 
-9. A ação foi deflagrada pela SUTRANS, órgão de trânsito do Município, com participação da Guarda Municipal, ambos integrantes da estrutura municipal e não subordinados à Polícia Militar da Bahia. A PMBA atuou em apoio, mediante acionamento da Central de Operações. Assim, das viaturas mencionadas na petição inicial ("cerca de 7 viaturas"), parte pertencia a órgãos municipais [INFORMAR QUANTAS ERAM DA PMBA]. [ESCLARECER SE A "RONDA ESCOLAR" CITADA PELOS IMPETRANTES É DA PMBA OU DA GUARDA MUNICIPAL.]
+9. A ação foi deflagrada pela SUTRANS, órgão de trânsito do Município, com participação da Guarda Municipal, ambos integrantes da estrutura municipal e não subordinados à Polícia Militar da Bahia. Estiveram presentes 03 (três) viaturas da Guarda Civil Municipal de Luís Eduardo Magalhães e 01 (uma) viatura da SUTRANS. A PMBA atuou em apoio, mediante acionamento da Central de Operações. Assim, das "cerca de 7 (sete) viaturas" mencionadas na petição inicial, 04 (quatro) pertenciam a órgãos municipais e apenas 03 (três) à Polícia Militar.
 
 V – DAS ABORDAGENS E REVISTAS
 
