@@ -43,3 +43,21 @@ c) Ao término, o comandante da operação deverá apresentar relatório no SIGE
 
 [NOME] – [POSTO] PM
 [Função] do 27º BPM
+
+---
+
+ANEXO – TRANSCRIÇÃO LITERAL DAS ORIENTAÇÕES (GUARNIÇÕES DO ORDINÁRIO – ELEIÇÕES)
+
+"Guarnição do centro a partir das 17h, Alfa 18 na frente do cartório, devendo, devendo permanecer até o término da apuração dos votos.
+
+Caso tenha necessidade, caso tenha aglomeração, apoio de uma guarnição da segunda ceia aqui do lado do Santa Cruz, para apoiar lá, enquanto a guarnição da Serto não chega no local.
+
+Guarnição da Serto 5h no cartório eleitoral fazer escolta das urnas da zona rural, da Vila 2, da, do Novo Paraná, vai permanecer lá até o retorno com as urnas.
+
+Colocar uma guarnição para fazer o povoado de Galinhos, qual é o outro povoado que tem ali depois de Galinhos? Tem algum outro? Galinhos e Muriçoca.
+
+As outras viaturas vamos fazer, é, revezamento nos setores aqui.
+
+A gente vai ter que tirar, vai ficar, vamos ficar com três viaturas com três viaturas rodando na cidade, fora a extra.
+
+Ok? Então, basicamente, para as guarnições do ordinário, o que a gente tem é isso aí."
