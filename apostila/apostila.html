@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>IA na Prática</title>
+<style>
+@page{size:A4;margin:0}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#1a2433;font-size:13.5pt;line-height:1.32}
+.page{width:210mm;height:297mm;padding:13mm 15mm 0;position:relative;page-break-after:always;overflow:hidden}
+.page:last-child{page-break-after:auto}
+.wm{position:absolute;left:50%;top:52%;width:125mm;transform:translate(-50%,-50%);opacity:.06;z-index:0}
+.c{position:relative;z-index:1}
+.foot{position:absolute;bottom:8mm;left:15mm;right:15mm;border-top:1px solid #c9d3e0;padding-top:2mm;font-size:10pt;color:#4a5668;display:flex;justify-content:space-between;align-items:center}
+.foot img{height:6mm;vertical-align:middle;margin-right:2mm}
+.hd{border:1.5px solid #c9d3e0;border-radius:8px;text-align:center;padding:3mm;margin-bottom:4mm;background:rgba(255,255,255,.85)}
+.hd h1{margin:0;font-size:24pt;color:#0b2a4a;letter-spacing:.5px}
+.hd p{margin:1mm 0 0;font-size:13.5pt;color:#34465c;font-weight:bold}
+.tag{display:inline-block;background:#dbe7f5;color:#024c8a;font-weight:bold;font-size:10.5pt;padding:1mm 4mm;border-radius:10px;margin-top:2mm}
+h2{font-size:16.5pt;color:#0b2a4a;margin:4mm 0 2mm;border-bottom:2px solid #024c8a;padding-bottom:1mm}
+.tri{display:flex;gap:3mm}.tri div{flex:1;border:1.5px solid #c9d3e0;border-radius:6px;padding:2mm 3mm;background:rgba(255,255,255,.8)}
+.tri b{display:block;text-align:center;border-bottom:1px solid #c9d3e0;margin-bottom:1mm;color:#0b2a4a;font-size:15pt}
+.tri ul{margin:0;padding-left:5mm}
+.flows{display:flex;gap:4mm}.flow{flex:1;border:1.5px solid #c9d3e0;border-radius:6px;padding:3mm;text-align:center;background:rgba(255,255,255,.8)}
+.flow h3{margin:0 0 2mm;font-size:14pt;color:#0b2a4a}
+.st{border:1.5px solid #0b2a4a;border-radius:5px;padding:3mm;font-weight:bold;font-size:14pt}
+.st.d{background:#0b2a4a;color:#fff}.st.h{background:#e3f4e6;border-color:#3b8a4a;color:#1d5c2a}
+.ar{color:#e08a00;font-size:16pt;line-height:1.3}
+table{width:100%;border-collapse:collapse;font-size:12.5pt;line-height:1.25;background:rgba(255,255,255,.85)}
+th{background:#0b2a4a;color:#fff;text-align:left;padding:2.5mm 2mm;font-size:12.5pt}
+td{padding:2mm 2mm;border-bottom:1px solid #d5dce6;vertical-align:top}
+tr:nth-child(even) td{background:rgba(238,242,247,.85)}
+td:first-child{font-weight:bold;color:#0b2a4a}
+
+.gold{border:1.5px solid #c9d3e0;border-radius:6px;padding:2.5mm 4mm;margin-bottom:2.5mm;background:rgba(255,255,255,.8)}
+.gold b{color:#0b2a4a;font-size:15pt}.gold p{margin:.5mm 0 0}
+.tip{background:#fff6e0;border:1.5px solid #e0a400;border-radius:6px;padding:3mm 4mm}
+.tip b{color:#9a6a00}
+.pr{border:1.5px solid #e0a400;border-left:6px solid #e08a00;border-radius:6px;padding:2.5mm 4mm;margin-bottom:3mm;background:#fffaf0}
+.pr b{display:block;color:#b05f00;font-size:12.5pt;margin-bottom:1mm}
+.pr p{margin:0;font-size:12.5pt;line-height:1.3}
+</style></head><body>
+
+<!-- P1 -->
+<section class="page"><img class="wm" src="logo.png"><div class="c">
+<div class="hd"><h1>IA NA PRÁTICA</h1><p>Fluxo profissional com IA para o escritório jurídico</p><span class="tag">PROF. NILTON DIAS</span></div>
+<h2>O FLUXO DE TRABALHO COM IA NA ADVOCACIA</h2>
+<p style="margin:0 0 3mm">A IA acelera a análise jurídica e processa grandes volumes de dados. Ela amplia a capacidade do advogado, sem substituir o discernimento técnico e estratégico humano.</p>
+<div class="tri">
+<div><b>SER</b><ul><li>Ética profissional</li><li>Pensamento crítico</li><li>Responsabilidade jurídica</li></ul></div>
+<div><b>SABER</b><ul><li>Legislação (CPC, CLT, CC)</li><li>Jurisprudência oficial</li><li>Doutrina</li></ul></div>
+<div><b>SABER FAZER</b><ul><li>Aplicação das ferramentas</li><li>Elaboração de peças</li><li>Tomada de decisões</li></ul></div>
+</div>
+<h2>FLUXOGRAMAS DE EXECUÇÃO NO ESCRITÓRIO</h2>
+<div class="flows">
+<div class="flow"><h3>FLUXO 1: PEÇAS E PARECERES</h3>
+<div class="st">Documentos do Cliente</div><div class="ar">↓</div>
+<div class="st d">NotebookLM (Análise Inicial)</div><div class="ar">↓</div>
+<div class="st d">ChatGPT (Raciocínio Jurídico)</div><div class="ar">↓</div>
+<div class="st d">Claude (Redação Final)</div><div class="ar">↓</div>
+<div class="st h">Revisão Humana Obrigatória</div></div>
+<div class="flow"><h3>FLUXO 2: ROTINAS EM LOTE</h3>
+<div class="st">Planilha ou Pasta de Arquivos</div><div class="ar">↓</div>
+<div class="st d">Claude Code (Agente que executa)</div><div class="ar">↓</div>
+<div class="st">Documentos ou Relatório Gerados</div><div class="ar">↓</div>
+<div class="st h">Conferência humana de todos os documentos</div></div>
+</div>
+<div class="tip" style="margin-top:5mm"><b>REGRA PRÁTICA DE DECISÃO:</b> tarefa única → <b>Claude</b> &nbsp;|&nbsp; tarefa repetitiva ou em lote → <b>Claude Code</b></div>
+</div><div class="foot"><span><img src="logo.png">Prof. Nilton Dias — IA na Prática</span><span>Página 1</span></div></section>
+
+<!-- P2 -->
+<section class="page"><img class="wm" src="logo.png"><div class="c">
+<div class="hd"><h1>AS 4 FERRAMENTAS ESSENCIAIS</h1><p>Objetivo, aplicação e prompt pronto</p></div>
+<table>
+<tr><th style="width:17%">FERRAMENTA</th><th style="width:30%">OBJETIVO</th><th style="width:22%">USO NO ESCRITÓRIO</th><th>PROMPT CURTO</th></tr>
+<tr><td>NotebookLM</td><td>Compreender grandes acervos com risco reduzido de alucinação, citando a fonte de cada resposta.</td><td>Contratos extensos, matrículas, due diligence e saneamento de autos.</td><td>"Analise os documentos e aponte fatos relevantes, riscos e omissões, com base apenas nas fontes anexadas."</td></tr>
+<tr><td>ChatGPT</td><td>Atuar como revisor crítico e consultor de lógica jurídica.</td><td>Testar teses, antecipar argumentos contrários e achar brechas.</td><td>"Revise este esboço e aponte falhas argumentativas, riscos e premissas frágeis."</td></tr>
+<tr><td>Claude</td><td>Redigir peças com fluidez e precisão. Usa conectores (Google Drive), Artefatos (slides, documentos, sites) e Skills (instruções salvas).</td><td>Pareceres, relatórios, análises contratuais e padronização com modelos do escritório.</td><td>"Transforme a análise em parecer técnico formal, claro e no padrão do modelo anexo."</td></tr>
+<tr><td>Claude Code</td><td>Agente que executa tarefas em pastas e arquivos com comandos em português, sem programar.</td><td>Renomear arquivos em massa, conferir planilhas e gerar notificações em escala.</td><td>"Renomeie os arquivos da pasta no padrão AREA_TIPO_ASSUNTO_ANO e gere um índice em planilha."</td></tr>
+</table>
+<div class="tip" style="margin-top:5mm"><b>ATENÇÃO — Claude Code e Google Drive:</b> o Claude Code trabalha em pastas do computador. Para organizar o Drive, instale o <b>Google Drive para computador</b> e trabalhe na pasta sincronizada.</div>
+</div><div class="foot"><span><img src="logo.png">Prof. Nilton Dias — IA na Prática</span><span>Página 2</span></div></section>
+
+<!-- P3 -->
+<section class="page"><img class="wm" src="logo.png"><div class="c">
+<div class="hd"><h1>AS 7 REGRAS DE OURO</h1><p>Segurança, eficiência e qualidade</p></div>
+<div class="gold"><b>1. Dê papel, contexto e formato</b><p>"Você é advogado trabalhista sênior… Entregue em tabela com as colunas…"</p></div>
+<div class="gold"><b>2. Mande o modelo junto</b><p>A IA copia muito melhor o padrão do escritório do que segue descrições genéricas.</p></div>
+<div class="gold"><b>3. Faça o prompt uma vez e salve</b><p>O prompt validado vai para o banco de prompts do escritório ou vira Skill no Claude.</p></div>
+<div class="gold"><b>4. Peça para a IA perguntar antes de escrever</b><p>"Antes de redigir, liste as informações e documentos que faltam."</p></div>
+<div class="gold"><b>5. Divida tarefas grandes em etapas</b><p>Primeiro o resumo dos fatos, depois a análise jurídica, por fim a redação.</p></div>
+<div class="gold"><b>6. Jurisprudência só vale se conferida na fonte oficial</b><p>A IA pode inventar julgados. Use-a para achar teses e termos; confirme no tribunal ou Jusbrasil.</p></div>
+<div class="gold"><b>7. Sigilo e proteção de dados (LGPD)</b><p>Anonimize dados das partes, use planos com proteção de dados e mantenha revisão humana sempre.</p></div>
+<h2>CONCLUSÃO</h2>
+<p style="margin:0 0 3mm">A IA não substitui o advogado: amplia sua capacidade analítica e sua velocidade. O diferencial continua na ética e na responsabilidade técnica do profissional.</p>
+<div class="tip"><b>★ DICA DE OURO:</b> use o NotebookLM para dominar os documentos, o ChatGPT para desafiar o raciocínio, o Claude para redigir com modelos anexados e o Claude Code para as rotinas em lote, sempre com revisão humana final.</div>
+</div><div class="foot"><span><img src="logo.png">Prof. Nilton Dias — IA na Prática</span><span>Página 3</span></div></section>
+
+<!-- P4 -->
+<section class="page"><img class="wm" src="logo.png"><div class="c">
+<div class="hd"><h1>PARTE II — GESTÃO E ADM</h1><p>Organização, apresentações, auditoria e site</p></div>
+<table>
+<tr><th style="width:19%">DOR</th><th style="width:17%">FERRAMENTA</th><th>INSIGHT PRÁTICO</th><th style="width:20%">ENTREGA</th></tr>
+<tr><td>1. Modelos no Drive</td><td>Claude Code</td><td>Defina antes o padrão AREA_TIPO_ASSUNTO_ANO. O Claude Code renomeia tudo e gera o índice.</td><td>Drive padronizado e planilha-índice</td></tr>
+<tr><td>2. Slides de portfólio</td><td>Claude / Gemini</td><td>Envie dados reais e peça primeiro o roteiro (1 slide por ideia), depois o design.</td><td>Apresentação de portfólio pronta</td></tr>
+<tr><td>3. Risco contratual</td><td>Claude + Skill</td><td>Transforme as diretrizes de conformidade em checklist fixo (Skill) e compare todo contrato com ele.</td><td>Tabela de riscos e desvios</td></tr>
+<tr><td>4. Auditoria trabalhista</td><td>NotebookLM + Claude</td><td>Comece pela jornada: NotebookLM cruza os documentos; Claude calcula horas e monta o quadro de riscos.</td><td>Quadro de risco e solução</td></tr>
+<tr><td>5. Guia e site</td><td>Claude + Claude Code</td><td>Claude revisa o guia e cria o prompt da capa; Claude Code publica o site grátis (GitHub Pages).</td><td>Guia finalizado e site no ar</td></tr>
+</table>
+<h2>PROMPTS PRONTOS</h2>
+<div class="pr"><b>PROMPT 1 — ORGANIZAÇÃO E ÍNDICE DE MODELOS (CLAUDE CODE)</b><p>Atue como gestor operacional. Analise a pasta [PASTA_MODELOS], renomeie todos os arquivos no formato [AREA]_[TIPO]_[ASSUNTO]_[ANO] e gere uma planilha com: nome original, novo nome e caminho do arquivo.</p></div>
+<div class="pr"><b>PROMPT 2 — ANÁLISE DE RISCO CONTRATUAL (CLAUDE)</b><p>Você é especialista em compliance contratual. Compare o contrato anexo com o nosso checklist de conformidade [ANEXO] e entregue uma tabela com: Cláusula, Desvio identificado, Grau de risco (Alto/Médio/Baixo) e Sugestão de nova redação.</p></div>
+</div><div class="foot"><span><img src="logo.png">Prof. Nilton Dias — IA na Prática</span><span>Página 4</span></div></section>
+
+<!-- P5 -->
+<section class="page"><img class="wm" src="logo.png"><div class="c">
+<div class="hd"><h1>PARTE III — OPERACIONAL JURÍDICO</h1><p>Peças, relatórios, revisão e jurisprudência</p></div>
+<table>
+<tr><th style="width:19%">DOR</th><th style="width:17%">FERRAMENTA</th><th>INSIGHT PRÁTICO</th><th style="width:20%">ENTREGA</th></tr>
+<tr><td>1. Peças fundamentadas</td><td>Claude + modelo</td><td>Anexe o modelo certo e ordene: "não invente fatos; marque [VERIFICAR] onde faltar dado".</td><td>Peça no padrão do escritório</td></tr>
+<tr><td>2. Relatório processual</td><td>Claude / NotebookLM</td><td>Use sempre a mesma estrutura e exija a página dos autos de cada informação.</td><td>Relatório completo e auditável</td></tr>
+<tr><td>3. Revisão final</td><td>Claude / ChatGPT</td><td>Revisor adversário + checklist: partes, nº do processo, prazos, pedidos, valores, anexos, ortografia.</td><td>Lista de correções antes do protocolo</td></tr>
+<tr><td>4. Jurisprudência</td><td>IA + Jusbrasil / tribunais</td><td>IA para teses e termos de busca → valide no Jusbrasil e nos sites dos tribunais.</td><td>Precedentes conferidos na fonte</td></tr>
+</table>
+<h2>PROMPTS PRONTOS</h2>
+<div class="pr"><b>PROMPT 1 — REDAÇÃO COM MODELO ANEXADO</b><p>Você é advogado especialista em [ÁREA]. Redija [TIPO_DE_PEÇA] com base nos documentos anexos, seguindo a estrutura do [MODELO_ANEXO]. Não invente fatos. Onde faltar informação, insira a tag [VERIFICAR].</p></div>
+<div class="pr"><b>PROMPT 2 — RELATÓRIO PROCESSUAL AUDITÁVEL</b><p>Você é advogado sênior de acompanhamento processual. Com base na cópia integral anexa, elabore um relatório com: 1) Partes; 2) Nº, vara e valor da causa; 3) Pedidos; 4) Tese de defesa; 5) Decisões (data e resumo); 6) Última movimentação; 7) Próxima etapa e prazos; 8) Risco (provável, possível ou remoto) com justificativa. Indique a página dos autos de cada informação. Se algo não constar, escreva [NÃO LOCALIZADO].</p></div>
+</div><div class="foot"><span><img src="logo.png">Prof. Nilton Dias — IA na Prática</span><span>Página 5</span></div></section>
+
+<!-- P6 -->
+<section class="page"><img class="wm" src="logo.png"><div class="c">
+<div class="hd"><h1>PARTE IV — COBRANÇAS</h1><p>Notificações, acordos, lembretes, conferência e pastas</p></div>
+<table>
+<tr><th style="width:19%">DOR</th><th style="width:17%">FERRAMENTA</th><th>INSIGHT PRÁTICO</th><th style="width:20%">ENTREGA</th></tr>
+<tr><td>1. Notificações em lote</td><td>Claude Code</td><td>Padronize as colunas (nome, CPF/CNPJ, endereço, valor, vencimento) e gere tudo com um comando.</td><td>Uma notificação por devedor</td></tr>
+<tr><td>2. Confissão de dívida</td><td>Claude</td><td>Anexe a política de negociação: a IA alerta quando a proposta passa dos limites autorizados.</td><td>Minuta de confissão de dívida validada</td></tr>
+<tr><td>3. Lembretes WhatsApp</td><td>Claude + Make / n8n</td><td>O Claude não envia mensagens: ele desenha o fluxo e os textos. Use a API oficial, só com consentimento.</td><td>Régua de lembretes automatizada</td></tr>
+<tr><td>4. Conferência mensal</td><td>Claude Code</td><td>Compare as planilhas por CPF/contrato: valores divergentes, parcelas faltantes e duplicidades.</td><td>Relatório de divergências</td></tr>
+<tr><td>5. Pastas por cliente</td><td>Claude Code</td><td>Estrutura CLIENTE / LOTE_AAAA-MM / DEVEDOR criada automaticamente a partir da planilha.</td><td>Pastas organizadas no Drive</td></tr>
+</table>
+<h2>PROMPTS PRONTOS</h2>
+<div class="pr"><b>PROMPT 1 — GERAÇÃO DE NOTIFICAÇÕES EM LOTE (CLAUDE CODE)</b><p>Atue como assistente de cobrança jurídica. Com base na planilha [PLANILHA] e no modelo [MODELO_NOTIFICAÇÃO], gere uma notificação para cada linha, nomeada NOTIFICACAO_[NOME]_[CPF_CNPJ].docx, salvando cada arquivo na pasta [CLIENTE]/LOTE_[AAAA-MM]/.</p></div>
+<div class="pr"><b>PROMPT 2 — ANÁLISE DE ACORDO E CONFISSÃO DE DÍVIDA (CLAUDE)</b><p>Analise a proposta do devedor [NOME_DEVEDOR] frente à política anexa: entrada mínima de [ENTRADA_MÍNIMA] e limite de [Nº_MÁX_PARCELAS] parcelas. Informe se está aprovada, reprovada ou pendente de autorização. Se aprovada, redija o instrumento de confissão de dívida completo.</p></div>
+</div><div class="foot"><span><img src="logo.png">Prof. Nilton Dias — IA na Prática</span><span>Página 6</span></div></section>
+</body></html>
