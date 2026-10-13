@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>IA na Prática</title>
+<style>
+@page{size:A4;margin:0}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#1a2433;font-size:12pt;line-height:1.3}
+.page{width:210mm;height:297mm;padding:12mm 14mm 0;position:relative;page-break-after:always;overflow:hidden}
+.page:last-child{page-break-after:auto}
+.wm{position:absolute;left:50%;top:52%;width:125mm;transform:translate(-50%,-50%);opacity:.06;z-index:0}
+.c{position:relative;z-index:1}
+.foot{position:absolute;bottom:7mm;left:14mm;right:14mm;border-top:1px solid #c9d3e0;padding-top:2mm;font-size:10pt;color:#4a5668;display:flex;justify-content:space-between;align-items:center}
+.foot img{height:6mm;vertical-align:middle;margin-right:2mm}
+.hd{border:1.5px solid #c9d3e0;border-radius:8px;text-align:center;padding:2.5mm;margin-bottom:3mm;background:rgba(255,255,255,.85)}
+.hd h1{margin:0;font-size:21pt;color:#0b2a4a}
+.hd p{margin:1mm 0 0;font-size:12pt;color:#34465c;font-weight:bold}
+.tag{display:inline-block;background:#dbe7f5;color:#024c8a;font-weight:bold;font-size:10.5pt;padding:1mm 4mm;border-radius:10px;margin-top:1.5mm}
+h2{font-size:14pt;color:#0b2a4a;margin:3mm 0 2mm;border-bottom:2px solid #024c8a;padding-bottom:1mm}
+h3{font-size:12.5pt;color:#024c8a;margin:2.5mm 0 1.5mm}
+p{margin:0 0 2mm}
+.cols{display:flex;gap:3mm}.cols>div{flex:1}
+.box{border:1.5px solid #c9d3e0;border-radius:6px;padding:2.5mm 3.5mm;background:rgba(255,255,255,.85)}
+.box b.t{display:block;color:#0b2a4a;font-size:12.5pt;margin-bottom:1mm}
+.tip{background:#fff6e0;border:1.5px solid #e0a400;border-radius:6px;padding:2.5mm 3.5mm}
+.tip b{color:#9a6a00}
+.blue{background:#eef3fa;border:1.5px solid #024c8a;border-radius:6px;padding:2.5mm 3.5mm}
+ul{margin:0;padding-left:5mm}li{margin-bottom:.6mm}
+.code{font-family:Consolas,'Courier New',monospace;font-size:10.5pt;background:#0b2a4a;color:#e8eef7;border-radius:6px;padding:2.5mm 3.5mm;line-height:1.35;white-space:pre}
+.chat{border:1.5px solid #c9d3e0;border-radius:8px;padding:2.5mm 3mm;background:rgba(255,255,255,.9);margin-bottom:2.5mm}
+.chat .h{font-weight:bold;color:#0b2a4a;font-size:12pt;margin-bottom:1.5mm}
+.m{border-radius:7px;padding:1.6mm 3mm;margin:1.2mm 0;font-size:11.3pt;line-height:1.28;max-width:93%}
+.u{background:#dbe7f5;margin-left:auto}
+.a{background:#f1f3f6;border-left:4px solid #e08a00}
+.m b.w{display:block;font-size:9.5pt;letter-spacing:.3px;color:#024c8a}
+.a b.w{color:#b05f00}
+.k{font-size:10.8pt;color:#1d5c2a;background:#e3f4e6;border-radius:5px;padding:1.3mm 3mm;margin-top:1.5mm}
+.cyc{display:flex;gap:2mm;align-items:center;text-align:center;font-weight:bold;font-size:11.5pt}
+.cyc div{flex:1;border:1.5px solid #0b2a4a;border-radius:6px;padding:2mm 1mm;background:#0b2a4a;color:#fff}
+.cyc span{color:#e08a00;font-size:15pt}
+.cyc div.h{background:#e3f4e6;color:#1d5c2a;border-color:#3b8a4a}
+table{width:100%;border-collapse:collapse;font-size:11pt;line-height:1.25;background:rgba(255,255,255,.85)}
+th{background:#0b2a4a;color:#fff;text-align:left;padding:1.8mm 2mm}
+td{padding:1.6mm 2mm;border-bottom:1px solid #d5dce6;vertical-align:top}
+tr:nth-child(even) td{background:rgba(238,242,247,.85)}
+td:first-child{font-weight:bold;color:#0b2a4a}
+</style></head><body>
+
+<!-- P1 -->
+<section class="page"><img class="wm" src="logo.png"><div class="c">
+<div class="hd"><h1>IA NA PRÁTICA</h1><p>Claude Code no escritório jurídico: da conversa ao trabalho entregue</p><span class="tag">PROF. NILTON DIAS</span></div>
+<h2>A VIRADA: PARE DE ESCREVER PROMPTS. CONVERSE E DELEGUE.</h2>
+<p>Prompt é ordem isolada para um assistente que esquece tudo. O <b>Claude Code</b> funciona como um <b>associado júnior que mora dentro das pastas do escritório</b>: ele conhece as regras da casa, lê os documentos, pergunta o que falta, propõe um plano, executa e mostra o resultado para você aprovar.</p>
+<div class="cols">
+<div class="box"><b class="t">✗ Nível prompt</b><ul><li>Copiar e colar comandos prontos</li><li>Uma resposta por vez</li><li>Explicar o escritório de novo a cada uso</li><li>Você faz o trabalho braçal</li></ul></div>
+<div class="box" style="border-color:#3b8a4a"><b class="t" style="color:#1d5c2a">✓ Nível Claude Code</b><ul><li>Conversa com objetivo e contexto</li><li>Tarefa inteira: lê, cria, salva, confere</li><li>Regras da casa memorizadas (CLAUDE.md)</li><li>Você decide e revisa</li></ul></div>
+</div>
+<h2>O CICLO DE TRABALHO</h2>
+<div class="cyc"><div>1. Objetivo</div><span>→</span><div>2. Perguntas</div><span>→</span><div>3. Plano</div><span>→</span><div>4. Execução</div><span>→</span><div class="h">5. Revisão humana</div></div>
+<p style="margin-top:2.5mm">Você diz <b>o resultado que quer</b>, não o passo a passo. O Claude pergunta o que falta, apresenta o plano (<b>modo plano</b>) e só executa depois do seu "pode seguir". Errou? Corrija <b>conversando</b> e diga: <b>"guarde isso como regra"</b>. Na próxima vez, ele já sabe.</p>
+<h2>AS 6 PEÇAS DO ESCRITÓRIO INTELIGENTE</h2>
+<table>
+<tr><th style="width:24%">PEÇA</th><th>O QUE É NO ESCRITÓRIO</th></tr>
+<tr><td>CLAUDE.md</td><td>O "manual da casa": padrões de peças, nomes de arquivos, tom, o que nunca fazer. Lido em toda conversa.</td></tr>
+<tr><td>Skills</td><td>Procedimentos salvos ("relatório processual", "notificação em lote") que o Claude aplica sozinho quando a tarefa aparece.</td></tr>
+<tr><td>Subagentes</td><td>Especialistas em paralelo: um analisa, outro faz o papel da parte contrária, outro confere dados.</td></tr>
+<tr><td>Conectores (MCP)</td><td>Pontes com Google Drive, Agenda, Gmail e outros sistemas.</td></tr>
+<tr><td>Rotinas</td><td>Tarefas agendadas que rodam sozinhas (ex.: conferência de planilhas todo dia 5).</td></tr>
+<tr><td>GitHub</td><td>O cofre versionado: modelos, Skills e o manual da casa com histórico, revisão e site publicado.</td></tr>
+</table>
+</div><div class="foot"><span><img src="logo.png">Prof. Nilton Dias — IA na Prática</span><span>Página 1</span></div></section>
+
+<!-- P2 -->
+<section class="page"><img class="wm" src="logo.png"><div class="c">
+<div class="hd"><h1>MONTANDO O ESCRITÓRIO NO CLAUDE CODE</h1><p>Uma vez bem montado, todo o resto vira conversa</p></div>
+<div class="cols">
+<div><h3>1. A pasta do escritório</h3>
+<div class="code">Escritorio/
+├─ CLAUDE.md        ← manual da casa
+├─ .claude/skills/  ← procedimentos
+├─ modelos/         ← peças e contratos
+├─ diretrizes/      ← compliance, política
+├─ processos/       ← cópias e relatórios
+└─ cobrancas/
+   └─ CLIENTE/LOTE_AAAA-MM/</div>
+<p style="margin-top:2mm;font-size:11pt">Sincronize com o <b>Google Drive para computador</b> e versione no <b>GitHub privado</b> (só modelos e regras, nunca documentos de clientes).</p></div>
+<div><h3>2. O CLAUDE.md (trecho)</h3>
+<div class="code"># Escritório — regras da casa
+- Peças seguem modelos/ da área.
+- Nunca invente fatos: use [VERIFICAR].
+- Jurisprudência só com link oficial
+  conferido; se não achar, diga.
+- Arquivos: AREA_TIPO_ASSUNTO_ANO.
+- Dados de clientes não saem da pasta.
+- Antes de gerar em lote, mostre
+  1 exemplo e espere aprovação.</div>
+<p style="margin-top:2mm;font-size:11pt">Você não precisa escrever: peça <b>"crie o CLAUDE.md conversando comigo"</b>.</p></div>
+</div>
+<h2>3. A CONVERSA QUE MONTA TUDO</h2>
+<div class="chat"><div class="h">Primeira sessão: o Claude entrevista o escritório</div>
+<div class="m u"><b class="w">VOCÊ</b>Quero preparar esta pasta para o escritório. Entreviste-me sobre como trabalhamos e monte o CLAUDE.md.</div>
+<div class="m a"><b class="w">CLAUDE</b>Li as pastas. Encontrei 214 modelos com nomes sem padrão. Antes de escrever: 1) quais áreas atendem? 2) quem revisa as peças? 3) há política de acordos para cobrança? 4) posso propor um padrão de nomes?</div>
+<div class="m u"><b class="w">VOCÊ</b>Trabalhista, cível e cobrança. Revisão do sócio. Política está em diretrizes/. Pode propor.</div>
+<div class="m a"><b class="w">CLAUDE</b>Plano: (1) CLAUDE.md com as regras acima; (2) renomear os 214 modelos — prévia de 10 abaixo; (3) índice em planilha; (4) primeiro commit no GitHub. Posso seguir?</div>
+<div class="k">✔ Em 20 minutos: manual da casa, acervo padronizado e versionado. Toda conversa futura já começa sabendo isso.</div></div>
+<div class="cols">
+<div class="tip"><b>Segurança no nível profissional</b><ul style="margin-top:1mm"><li>Permissões: ele pede autorização antes de alterar ou apagar</li><li>Plano corporativo com proteção de dados</li><li>Revisão humana antes de protocolo e envio</li></ul></div>
+<div class="blue"><b style="color:#024c8a">Hábito de ouro</b><br>Sempre que corrigir o Claude, termine com: <b>"guarde isso no CLAUDE.md"</b> ou <b>"transforme isso numa Skill"</b>. O escritório aprende com cada conversa.</div>
+</div>
+</div><div class="foot"><span><img src="logo.png">Prof. Nilton Dias — IA na Prática</span><span>Página 2</span></div></section>
+
+<!-- P3 -->
+<section class="page"><img class="wm" src="logo.png"><div class="c">
+<div class="hd"><h1>COMO CONVERSAR EM ALTO NÍVEL</h1><p>As 7 atitudes de quem domina o Claude Code</p></div>
+<table>
+<tr><th style="width:30%">ATITUDE</th><th>COMO SOA NA CONVERSA</th></tr>
+<tr><td>1. Delegue o resultado</td><td>"Preciso que a equipe receba até sexta um relatório de todos os processos do cliente X." (não o passo a passo)</td></tr>
+<tr><td>2. Deixe ele perguntar</td><td>"Antes de começar, o que você precisa saber de mim?"</td></tr>
+<tr><td>3. Exija o plano</td><td>"Mostre o plano antes. Não altere nada ainda." (modo plano)</td></tr>
+<tr><td>4. Peça prova</td><td>"De onde tirou isso? Cite a página dos autos." / "Mostre 1 exemplo antes do lote."</td></tr>
+<tr><td>5. Divida o trabalho</td><td>"Use subagentes: um analisa, outro ataca a tese como a parte contrária, outro confere valores."</td></tr>
+<tr><td>6. Ensine uma vez</td><td>"Isso ficou ótimo. Transforme em Skill para usarmos todo mês."</td></tr>
+<tr><td>7. Automatize o repetitivo</td><td>"Agende isso para todo dia 5 e me avise só se houver divergência." (rotina)</td></tr>
+</table>
+<h2>EXEMPLO: SUBAGENTES EM PARALELO</h2>
+<div class="chat"><div class="h">Revisão de uma contestação antes do protocolo</div>
+<div class="m u"><b class="w">VOCÊ</b>Revise a contestação do processo Silva. Quero três olhares em paralelo.</div>
+<div class="m a"><b class="w">CLAUDE</b>Disparei três subagentes:<br>• <b>Conferente</b>: partes, nº do processo, prazos, valores e anexos citados<br>• <b>Parte contrária</b>: os 3 pontos que o autor atacaria<br>• <b>Revisor de texto</b>: clareza, ortografia, formatação do modelo<br>Resultado: 2 erros de dados (valor da causa diverge da inicial, fl. 3), 1 tese frágil (prescrição sem marco inicial) e 6 ajustes de texto. Corrijo os dados e deixo a tese para sua decisão?</div>
+<div class="m u"><b class="w">VOCÊ</b>Corrija os dados. Sobre a prescrição, me mostre duas alternativas.</div>
+<div class="k">✔ O advogado decide a estratégia. O Claude faz a conferência que ninguém tem tempo de fazer.</div></div>
+<div class="cols">
+<div class="tip"><b>Jurisprudência: a regra que não muda</b><br>O Claude pesquisa na web e traz teses e links, mas <b>todo julgado é aberto e conferido na fonte oficial</b> antes de entrar na peça. Coloque isso no CLAUDE.md.</div>
+<div class="blue"><b style="color:#024c8a">Quando usar o quê</b><br>Conversa rápida, um documento → <b>Claude (chat)</b><br>Muitos arquivos, rotinas, padrões do escritório → <b>Claude Code</b></div>
+</div>
+</div><div class="foot"><span><img src="logo.png">Prof. Nilton Dias — IA na Prática</span><span>Página 3</span></div></section>
+
+<!-- P4 nuvem -->
+<section class="page"><img class="wm" src="logo.png"><div class="c">
+<div class="hd"><h1>GITHUB, NUVEM E BOAS PRÁTICAS</h1><p>O que transforma o uso individual em um sistema do escritório</p></div>
+<h2>POR QUE O GITHUB É A BASE DO CLAUDE CODE NA NUVEM</h2>
+<p>No computador, o Claude Code trabalha nas suas pastas. <b>Na nuvem</b> (claude.ai/code, app de celular ou computador), ele roda em uma máquina segura da Anthropic que <b>busca o trabalho no GitHub</b> e devolve o resultado para lá. <b>Sem GitHub, não há Claude Code na nuvem.</b></p>
+<div class="cyc" style="font-size:10.8pt"><div>Você pede (até pelo celular)</div><span>→</span><div>Claude trabalha na nuvem</div><span>→</span><div>Entrega como proposta (PR)</div><span>→</span><div class="h">Sócio revisa e aprova</div></div>
+<div class="cols" style="margin-top:2.5mm;font-size:11.2pt;line-height:1.25">
+<div class="box"><b class="t">O que a nuvem permite</b><ul>
+<li>Trabalhar <b>de qualquer lugar</b>, sem o computador ligado</li>
+<li>Tarefas longas rodando <b>enquanto você atende clientes</b></li>
+<li>Várias tarefas <b>em paralelo</b>, cada uma em sua sessão</li>
+<li><b>Rotinas agendadas</b> que rodam sozinhas</li>
+<li><b>Equipe inteira</b> usando o mesmo manual da casa e as mesmas Skills</li></ul></div>
+<div class="box"><b class="t">O que o GitHub garante</b><ul>
+<li><b>Histórico completo</b>: quem mudou o quê e quando; volta a qualquer versão</li>
+<li><b>Revisão antes de valer</b>: a mudança só entra após aprovação (PR)</li>
+<li><b>Fonte única da verdade</b>: um só modelo oficial, sem "versão final 3"</li>
+<li><b>Site publicado</b> grátis (GitHub Pages)</li>
+<li><b>Controle de acesso</b> por pessoa</li></ul></div>
+</div>
+<h2>BOAS PRÁTICAS NO USO DE IA NO ESCRITÓRIO</h2>
+<table>
+<tr><th style="width:24%">TEMA</th><th>PRÁTICA</th></tr>
+<tr><td>Sigilo e LGPD</td><td>GitHub guarda <b>conhecimento</b> (modelos, Skills, CLAUDE.md), nunca documentos de clientes. Dados reais ficam no Drive do escritório; anonimize sempre que possível.</td></tr>
+<tr><td>Acesso</td><td>Repositório <b>privado</b>, verificação em duas etapas para todos e acesso só a quem precisa. Plano corporativo de IA com proteção de dados.</td></tr>
+<tr><td>Senhas e chaves</td><td>Nunca escreva senhas, tokens ou chaves em arquivos ou conversas. Use os cofres de segredos das ferramentas.</td></tr>
+<tr><td>Fluxo de mudanças</td><td>Nada vai direto para a versão oficial: cada mudança vira uma proposta (PR) revisada por uma pessoa.</td></tr>
+<tr><td>Permissões</td><td>Dê ao Claude só o necessário. Aprove ações que alteram, apagam ou enviam algo.</td></tr>
+<tr><td>Verificação</td><td>Toda jurisprudência é conferida na fonte oficial. Todo lote começa com 1 exemplo aprovado. Toda peça passa por revisão humana.</td></tr>
+<tr><td>Responsabilidade</td><td>A IA é ferramenta; a responsabilidade técnica e ética é do advogado. Siga as orientações da OAB sobre IA generativa e informe o cliente quando cabível.</td></tr>
+<tr><td>Melhoria contínua</td><td>Cada correção vira regra no CLAUDE.md ou Skill. Revise o manual da casa periodicamente.</td></tr>
+</table>
+</div><div class="foot"><span><img src="logo.png">Prof. Nilton Dias — IA na Prática</span><span>Página 4</span></div></section>
+
+<!-- P4 -->
+<section class="page"><img class="wm" src="logo.png"><div class="c">
+<div class="hd"><h1>PARTE II — GESTÃO E ADM</h1><p>As dores resolvidas em conversa</p></div>
+<div class="chat"><div class="h">Dor 3 — Análise de risco contratual</div>
+<div class="m u"><b class="w">VOCÊ</b>Chegaram 12 contratos de fornecedores em contratos/entrada. Quero saber quais posso assinar.</div>
+<div class="m a"><b class="w">CLAUDE</b>Vou comparar cada um com diretrizes/compliance.pdf. Prefere matriz única ou um parecer por contrato?</div>
+<div class="m u"><b class="w">VOCÊ</b>Matriz única, e destaque os de risco alto.</div>
+<div class="m a"><b class="w">CLAUDE</b>Pronto: 7 dentro do padrão; 3 de risco médio (multa acima do teto); 2 de risco alto (foro estrangeiro e renovação automática sem aviso). Para os 2 críticos, já redigi a cláusula substituta.</div>
+<div class="k">✔ Diga ao final: "Transforme essa análise na Skill <b>risco-contratual</b>." No próximo lote, basta "analise os contratos novos".</div></div>
+<div class="chat"><div class="h">Dor 4 — Auditoria trabalhista (jornada)</div>
+<div class="m u"><b class="w">VOCÊ</b>Audite a jornada da empresa Alfa com os documentos em auditoria/alfa. Quero risco e solução.</div>
+<div class="m a"><b class="w">CLAUDE</b>Cruzei 6 meses de cartões de ponto com contratos e acordos: 14 empregados com hora extra habitual acima de 2h/dia, intervalo intrajornada suprimido em 3 setores e banco de horas sem acordo válido. Montei o quadro com risco, fundamento na CLT, passivo estimado e ação preventiva. Confira as premissas de cálculo na aba 2.</div>
+<div class="k">✔ O Claude calcula; o advogado valida as premissas e assina.</div></div>
+<table>
+<tr><th style="width:26%">OUTRAS DORES</th><th>A CONVERSA QUE RESOLVE</th></tr>
+<tr><td>1. Banco de modelos</td><td>"Organize modelos/ no padrão do CLAUDE.md, gere o índice e faça o commit no GitHub."</td></tr>
+<tr><td>2. Slides de portfólio</td><td>"Monte a apresentação do escritório com nossos cases. Primeiro me mostre o roteiro."</td></tr>
+<tr><td>5. Guia trabalhista + site</td><td>"Revise o guia, sugira a capa e publique como site no GitHub Pages. Mande-me o link."</td></tr>
+</table>
+</div><div class="foot"><span><img src="logo.png">Prof. Nilton Dias — IA na Prática</span><span>Página 5</span></div></section>
+
+<!-- P5 -->
+<section class="page"><img class="wm" src="logo.png"><div class="c">
+<div class="hd"><h1>PARTE III — OPERACIONAL JURÍDICO</h1><p>Peças, relatórios, revisão e jurisprudência em conversa</p></div>
+<div class="chat"><div class="h">Dor 2 — Relatório de cópia integral do processo</div>
+<div class="m u"><b class="w">VOCÊ</b>Baixei a cópia integral do processo 0001234 em processos/. Preciso do relatório para o cliente.</div>
+<div class="m a"><b class="w">CLAUDE</b>Usei a Skill <b>relatório-processual</b>. São 412 páginas. Partes, valor da causa, pedidos, tese de defesa, 5 decisões, última movimentação (conclusos para sentença, fl. 398) e próxima etapa. Risco: <b>possível</b> — a perícia foi favorável, mas há testemunha contrária (fl. 301). Cada dado tem a página dos autos. 2 itens marcados [NÃO LOCALIZADO].</div>
+<div class="m u"><b class="w">VOCÊ</b>Faça o mesmo para os outros 30 processos do cliente e consolide numa planilha.</div>
+<div class="k">✔ Um relatório vira 31 com uma frase, porque o padrão está na Skill.</div></div>
+<div class="chat"><div class="h">Dor 1 — Peça fundamentada</div>
+<div class="m u"><b class="w">VOCÊ</b>Precisamos contestar a ação do processo Souza. Documentos do cliente em processos/souza.</div>
+<div class="m a"><b class="w">CLAUDE</b>Antes de redigir: 1) o cliente confirma o pagamento das férias de 2023? 2) Há controle de ponto do período? Proponho 3 teses: prescrição parcial, pagamento comprovado e inexistência de hora extra. Sigo nessa ordem com o modelo trabalhista?</div>
+<div class="m u"><b class="w">VOCÊ</b>Férias pagas, recibo na pasta. Sem ponto. Tire a terceira tese e siga.</div>
+<div class="k">✔ Ele pergunta antes de escrever. Peça pronta no modelo da casa, com [VERIFICAR] onde faltar prova.</div></div>
+<table>
+<tr><th style="width:26%">OUTRAS DORES</th><th>A CONVERSA QUE RESOLVE</th></tr>
+<tr><td>3. Revisão final</td><td>"Revise com os três subagentes (conferente, parte contrária, texto) antes de eu protocolar."</td></tr>
+<tr><td>4. Jurisprudência</td><td>"Pesquise precedentes do TRT-2 sobre essa tese e traga os links oficiais. Não cite nada que não conseguir abrir."</td></tr>
+</table>
+</div><div class="foot"><span><img src="logo.png">Prof. Nilton Dias — IA na Prática</span><span>Página 6</span></div></section>
+
+<!-- P6 -->
+<section class="page"><img class="wm" src="logo.png"><div class="c">
+<div class="hd"><h1>PARTE IV — COBRANÇAS</h1><p>Lote, acordos, rotinas e lembretes em conversa</p></div>
+<div class="chat"><div class="h">Dor 1 — Notificações extrajudiciais em lote</div>
+<div class="m u"><b class="w">VOCÊ</b>O cliente Beta mandou a planilha de inadimplentes de outubro. Notifique todos.</div>
+<div class="m a"><b class="w">CLAUDE</b>São 87 devedores. 4 estão sem endereço e 2 têm CPF inválido; deixei separados. Segue 1 notificação de exemplo. Aprova o texto?</div>
+<div class="m u"><b class="w">VOCÊ</b>Aprovo. Acrescente o prazo de 10 dias.</div>
+<div class="m a"><b class="w">CLAUDE</b>Gerei 81 notificações em cobrancas/BETA/LOTE_2026-10/, uma pasta por devedor, e a lista de pendências.</div>
+<div class="k">✔ Exemplo aprovado antes do lote. Conferência humana antes do envio.</div></div>
+<div class="chat"><div class="h">Dor 4 — Conferência mensal das planilhas (rotina)</div>
+<div class="m u"><b class="w">VOCÊ</b>Todo dia 5, compare nossa planilha de acordos com a do cliente e me avise só se houver divergência.</div>
+<div class="m a"><b class="w">CLAUDE</b>Rotina criada. Neste mês: 3 parcelas pagas que o cliente não baixou, 1 devedor duplicado e 2 valores divergentes. Relatório em cobrancas/BETA/conferencias/.</div>
+<div class="k">✔ O trabalho repetitivo sai da agenda da equipe.</div></div>
+<table>
+<tr><th style="width:26%">OUTRAS DORES</th><th>A CONVERSA QUE RESOLVE</th></tr>
+<tr><td>2. Confissão de dívida</td><td>"O devedor propôs 20% de entrada e 18 parcelas. Está dentro da política? Se estiver, redija a confissão de dívida."</td></tr>
+<tr><td>3. Lembretes WhatsApp</td><td>"Monte comigo a régua de lembretes: Agenda Google + WhatsApp Business." O Claude desenha a integração (API oficial via Make/n8n) e as mensagens. Só com consentimento do devedor.</td></tr>
+<tr><td>5. Pastas por lote</td><td>"Crie a estrutura CLIENTE/LOTE/DEVEDOR a partir da planilha e arquive os comprovantes."</td></tr>
+</table>
+<div class="tip" style="margin-top:3mm"><b>★ DICA DE OURO:</b> o advogado de alto nível não escreve prompts: <b>monta o escritório uma vez</b> (CLAUDE.md, Skills, conectores, GitHub) e depois <b>conversa, decide e revisa</b>. A responsabilidade técnica continua sendo sua.</div>
+</div><div class="foot"><span><img src="logo.png">Prof. Nilton Dias — IA na Prática</span><span>Página 7</span></div></section>
+</body></html>
